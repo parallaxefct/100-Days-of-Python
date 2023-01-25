@@ -1,0 +1,12 @@
+#Band Name Generator Project!
+
+
+#print the greeting requested
+print("Welcome to the Band Name Generator!")
+
+#get input for city and pet name
+city = input("What's name of the city you grew up in?\n")
+pet = input("What's your pet's name?\n")
+
+#print the band name
+print("Your band name could be " + city + " " + pet)
