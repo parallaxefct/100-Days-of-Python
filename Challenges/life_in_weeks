@@ -1,0 +1,14 @@
+#prompt the user to input their age in years, then output the total days/weeks/months left until they turn 90
+
+#prompt user for age input
+age = int(input("What is your current age? "))
+
+#calculate days
+daysLeft = 365 * (90 - age)
+#calculate weeks
+weeksLeft = 52 * (90 - age)
+#calculate months
+monthsLeft = 12 * (90 - age)
+
+#output format You have X days, X weeks, and X months left
+print(f"You have {daysLeft} days, {weeksLeft} weeks, and {monthsLeft} months left")
