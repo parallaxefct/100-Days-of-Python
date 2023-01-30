@@ -1,4 +1,7 @@
+#prompts user to input student height and creates a list
 student_heights = input("Input a list of student heights ").split()
+
+#converts each value from a STRING to an INTERGER
 for n in range(0, len(student_heights)):
   student_heights[n] = int(student_heights[n])
 
