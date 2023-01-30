@@ -3,8 +3,11 @@ for n in range(0, len(student_heights)):
   student_heights[n] = int(student_heights[n])
 
 
-index = 0
-
+sum = 0
 for x in student_heights:
-    index += x
-    print(index)
+    sum += x
+    average = sum / len(student_heights)
+
+#type cast to interger
+average = int(average)
+print(average)
