@@ -1,0 +1,12 @@
+#write a program that finds the highest score of the numbers entered
+
+student_scores = input("Input a list of student scores ").split()
+
+#converts each value from a STRING to an INTERGER
+for n in range(0, len(student_scores)):
+  student_scores[n] = int(student_scores[n])
+print(student_scores)
+
+
+for x in student_scores:
+    
