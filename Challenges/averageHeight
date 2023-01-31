@@ -11,6 +11,6 @@ for x in student_heights:
     sum += x
     average = sum / len(student_heights)
 
-#type cast to interger
+#type cast to interger and print
 average = int(average)
 print(average)
