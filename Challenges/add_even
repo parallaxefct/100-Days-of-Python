@@ -1,3 +1,8 @@
 #add all even numbers between 1-100, including 1 and 100
 
 total = 0
+
+for count in range(0, 101, 2):
+    total += count
+
+print(count + 1)
