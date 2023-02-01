@@ -13,4 +13,4 @@ for x in student_scores:
     if x > y:
         y = x
 
-print(x)
+print(f"The highest score in the class is: {y}")
