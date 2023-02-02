@@ -1,0 +1,34 @@
+#Love Calculator Challenge
+
+#count the total times letters in TRUE and LOVE appear in the two names entered.
+#for a score < 10 or > 90, output specific message. For a score between 40 - 50 output a specific message. and all else just output the score
+
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+
+#make all characters lower case
+name1 = name1.lower()
+name2 = name2.lower()
+
+#concantinate names to one string
+names = str(name1 + name2)
+
+#count total for letters TRUE
+totalTrue = names.count('t') + names.count('r') + names.count('u') + names.count('e')
+#count total for letters LOVE
+totalLove = names.count('l') + names.count('o') + names.count('v') + names.count('e')
+
+
+score = str(totalTrue) + str(totalLove)
+score = int(score)
+
+
+if score < 10 or score > 90:
+    print(f"Your score is {score}, you go together like coke and mentos.")
+
+elif score >= 40 and score <= 50:
+    print(f"Your score is {score}, you are alright together.")
+
+else:
+    print(f"Your score is {score}.")

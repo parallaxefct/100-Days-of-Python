@@ -1,0 +1,13 @@
+#Body Mass Index Calculator
+
+#the formula for BMI is WEIGHT / HEIGHT^2
+
+#get input for height and weight // convert from string to float
+h = float(input("enter your height in m: "))
+w = float(input("enter your weight in kg: "))
+
+#divide the numbers
+bmi = w / h ** 2
+
+#print out the BMI
+print(int(bmi))

@@ -1,0 +1,46 @@
+#Love Cal 2.0
+
+
+#count the total times letters in TRUE and LOVE appear in the two names entered.
+#for a score < 10 or > 90, output specific message. For a score between 40 - 50 output a specific message. and all else just output the score
+
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+
+#concantinate first, and no need to use the str() function given that they are already STRINGS
+names = name1 + name2
+
+#format as lower case
+lowerNames = names.lower()
+
+#count total for letters TRUE
+t = lowerNames.count('t')
+r = lowerNames.count('r')
+u = lowerNames.count('u')
+e = lowerNames.count('e')
+
+#find sum
+true = t + r + u + e
+
+#count total for letters LOVE
+l = lowerNames.count('l')
+o = lowerNames.count('o')
+v = lowerNames.count('v')
+e = lowerNames.count('e')
+
+#find sum
+love = l + o + v + e
+
+#concantinate STRING numbers AND convert to INT
+score = int(str(true) + str(love))
+
+#output based on score
+if score < 10 or score > 90:
+    print(f"Your score is {score}, you go together like coke and mentos.")
+
+elif score >= 40 and score <= 50:
+    print(f"Your score is {score}, you are alright together.")
+
+else:
+    print(f"Your score is {score}.")

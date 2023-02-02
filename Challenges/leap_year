@@ -1,0 +1,29 @@
+#Leap Year challenge
+
+#normal year has 365, but leap year has extra day in Feb
+
+#formula: every year that is divisible by 4, EXCEPT every year that is evenly divisible by 100, unless the year is ALSO evenly divisible by 400
+
+#prompt user to input year
+year = int(input("Which year do you want to check? "))
+
+
+#---the logic is important. Logic begins as Boolean True---***
+
+
+#is year divisible evenly by 4? Yes? Then next logic. No? then Not leap.
+if year % 4 == 0:
+    #is year divisible evenly by 100? No? then Leap. Yes? then check against 400.
+    if year % 100 == 0:
+        #is year divisible evenly by 400? Yes? Leap. No? then Not leap.
+        if year % 400 == 0:
+            print("Leap year.")
+
+        else:
+            print("Not leap year.")
+
+    else:
+        print("Leap year.")
+
+else:
+    print("Not leap year.")

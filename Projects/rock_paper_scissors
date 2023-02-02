@@ -1,0 +1,83 @@
+#rock, paper, scissors game. user inputs choice and the computer generates random choice. outcome prints
+
+import random
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+
+#generate user input
+choice = int(input("What do you chose? Type 0 for Rock, 1 for Paper, and 2 for Scissors\n"))
+#generate a random number between 0-2
+compChoice = random.randint(0, 2)
+
+hands = [rock, paper, scissors]
+
+#print choice
+if choice == 0:
+    print(hands[0] + "\n")
+elif choice == 1:
+    print(hands[1] + "\n")
+else:
+    print(hands[2] + "\n")
+
+
+
+#print computer choice
+print("Computer chose:\n")
+if compChoice == 0:
+    print(hands[0] + "\n")
+elif compChoice == 1:
+    print(hands[1] + "\n")
+else:
+    print(hands[2] + "\n")
+
+
+
+
+#tie
+if choice == compChoice:
+    print("You've tied")
+
+#win/lose rock
+elif choice == 0:
+    if compChoice == 1:
+        print("You lose")
+    else:
+        print("You win")
+#win/lose paper
+elif choice == 1:
+    if compChoice == 0:
+        print("You win")
+    else:
+        print("You lose")
+#win/lose scissor
+elif choice == 2:
+    if compChoice == 0:
+        print("You lose")
+    else:
+        print("You win")

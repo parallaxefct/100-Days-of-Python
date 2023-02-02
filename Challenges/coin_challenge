@@ -1,0 +1,13 @@
+#Coin challenge
+
+#0 = heads and 1 = tails. generate a number and output the result
+
+import random
+
+coin = random.randint(0, 1)
+
+if coin == 1:
+    print("Heads")
+
+else:
+    print("Tails")

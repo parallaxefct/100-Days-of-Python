@@ -1,0 +1,15 @@
+#create a tip calculator and for 10/12/15 percent tip options and output total for each given person
+
+total = float(input("What is the total bill? $"))
+percent = int(input("What percentage tip would you like to give? 10, 12, or 15? "))
+ppl = float(input("How many people to split the bill? "))
+
+    #find tip
+tip = total * (percent / 100)
+    #find total with tip
+total = total + tip
+    #find total for everyone
+costPer = round(total / ppl, 2)
+    #this formats the output to ensure there are always 2 decimal places output. this is done by specifying the format wanted and then using format function built into PYTHON
+costPer = "{:.2f}".format(costPer)
+print(f"Each person should pay ${costPer}")

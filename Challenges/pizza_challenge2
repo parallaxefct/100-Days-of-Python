@@ -1,0 +1,33 @@
+#pizza challenge 2.0 || revised based on new learns : IF statements do NOT need an ELSE statement to corrospond
+
+print("Welcome to Python Pizza Deliveries!")
+
+#prompt user for size, pepperoni, and cheese
+size = input("What size pizza do you want? S, M, or L: ")
+add_pepperoni = input("Do you want pepperoni? Y or N: ")
+extra_cheese = input("Do you want extra cheese? Y or N: ")
+
+price = 0
+
+#find cost per size
+if size == 'S':
+    price += 15
+elif size == 'M':
+    price += 20
+else:
+    price += 25
+
+#find cost if pepperoni is wanted or not
+if add_pepperoni == 'Y':
+    if size == 'S':
+        price += 2
+    else:
+        price += 3
+
+#find cost if cheese add-on
+if extra_cheese == 'Y':
+    price += 1
+    print(f"Your final bill is: ${price}.")
+
+else:
+    print(f"Your final bill is: ${price}.")

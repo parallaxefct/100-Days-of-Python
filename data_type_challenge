@@ -1,0 +1,14 @@
+#DATA TYPES challenge
+#find the sum of first and second digit of a given two digit number
+
+#request a two digit number and store it
+#remember that input will convert to string
+num = input("Type a two digit number: ");
+
+#create a variable to hold first digit || typecast the first char of num
+i = int(num[0])
+#create a varible that holds the second digit || typecast the second char of num
+j = int(num[1])
+
+#print out the sum
+print("The sum is ", i + j)

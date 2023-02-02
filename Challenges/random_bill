@@ -1,0 +1,12 @@
+#Who pays the bill challenge
+import random
+
+allNames = input("Give me everybodys name seperated by a comma.\n")
+name = allNames.split(", ")
+
+num = len(name)
+pickNum = random.randint(0, (num - 1)) #you subtract 1 because indexing starts at 0 and the total count from len() starts at 1
+
+whoPays = name[pickNum]
+
+print(f"{whoPays} is going to buy the meal today.")
