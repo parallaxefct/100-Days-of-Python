@@ -11,7 +11,7 @@ def the_beginning():
                     |-._,-'  |
                     | |    _,'
                     '-|_,-'               \n\n''')
-    print("\- \'The TV....It's not an alarm.\' It's the national EAS broadcast. What is going on?")
+    print("\"It's not an alarm.....the TV?\"\n\nIt's the national EAS broadcast.\n\n\"What is going on?\"")
 
 
 
