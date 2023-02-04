@@ -1,9 +1,10 @@
 def left:
-    print("")
+    print("You start running.")
 
 def right:
 
 
+#
 def the_beginning():
     input("\n\n\nDarkness...")
     input("\nA distant alarm grows louder. You sit up and rub your eyes...")
