@@ -1,6 +1,14 @@
+def left:
+    print("")
+
+def right:
+
+
 def the_beginning():
     input("\n\n\nDarkness...")
     input("\nA distant alarm grows louder. You sit up and rub your eyes...")
+
+
     print('''\n\n\n         _,-.
       ,-'  _|
       |_,-O__`-._
@@ -11,19 +19,28 @@ def the_beginning():
                     |-._,-'  |
                     | |    _,'
                     '-|_,-'               \n\n''')
-    print("It's not an alarm.....the TV?\n\nIt's the national EAS broadcast.\n")
-    print("You look out the window, and it's chaos. You see people packing their cars. Others sprinting down the street. Distant sirens whaling and the faint smell of smoke...\n")
-    print("The pre-recorded voice over slinking from the TV snaps you out shock. ")
-
-    left_or_right = input("Unsure, you walk out of your apartment...which way do you go? Left or right?")
+    print("It's not an alarm.....the TV? You know that sound, it's the national EAS broadcast.\n")
 
 
+    input("You look out of the window, and it's chaos. You see people throwing suitcases and family members in cars. Others sprinting down the street. Too many to count. Distant sirens wailing and the faint smell of smoke creeps in...")
+
+
+    print("\n\n\nA pre-recorded voiceover screetching from the TV snaps you out of shock. You don't know what to do, but you know you can't stay here.\n")
+
+    left_right = input("Unsure, you walk out of your apartment...which way do you go? Left or right down the hall way? ")
+
+    left_right = left_right.lower()
+
+    if left_right == 'left':
+        left()
+    else:
+        right()
 
 
 
 
 
-
+#the window
 print('''
 
                                     _______________________      |
