@@ -1,3 +1,24 @@
+def the_beginning():
+    p1 = input("\n\n\nDarkness...")
+    print("A distant alarm grows louder. You sit up and rub your eyes...\n\n\n")
+    print("         _,-.
+      ,-'  _|
+      |_,-O__`-._
+      |`-._\`.__ `_.
+      |`-._`-.\,-'_|  _,-'.
+           `-.|.-' | |`.-'|_
+              |      |_|,-'_`.
+                    |-._,-'  |
+                    | |    _,'
+                    '-|_,-'     ")
+
+
+
+
+
+
+
+
 print('''
 ______.........--=T=--.........______
    .             |:|
@@ -9,37 +30,7 @@ ______.........--=T=--.........______
                   O"       O" grp\n''')
 
 
-print("Welcome to Resident Survival. Your mission is to escape the zombie wasteland in one piece.\n")
-dec1 = input("You bust open the front door with zombies right on your heels. You can head left to the docks, or right to a running police car. Type \"left\" or \"right\": ")
+welcome = input("Welcome to Zombie Survival. Your mission is to escape the zombie wasteland in one piece.\nAre you ready?\n")
 
-#make input all lower case
-dec1 = dec1.lower()
-
-if dec1 == 'left':
-    print("You sprint down the road, the horde of zombies preoccupied with the choas of escaping survivors.\n")
-    dec2 = input("You hop a 6 foot fence and come to the end of the dock. Do you jump in the water or wait to look for keys to a boat? Type \"swim\" or \"wait\": ")
-    dec2 = dec2.lower()
-
-    if dec2 == 'wait':
-        print("You look through the 3 boats that are docked. No luck. You hear metal wrenching. When you turn around you see the horde pushing against fence as bows and twist, about to collpase.\n")
-        dec3 = input("You then hear an engine kick off and a loud swirly sound begin. A helicopter! You turn to your left and see a 3 story building with a Red, Yellow, and Blue door. Which door do you choose?: ")
-        dec3 = dec3.lower()
-
-        if dec3 == 'yellow':
-            print("You kick the door open and see a set of stairs right in front of you. *CRASH* the fence gaveway. You double-time it up the stairs and out the emergency exit. A helicopter is about to take off and the pilot sees you and urgently waves you to get in. You do. You've escaped! For now...")
-
-        elif dec3 == 'red':
-            print("You try the door knob, its hot. In a panic you kick the door open. This causes a backdraft, an explosion, and you are engulfed in flames. Game Over...")
-
-        elif dec3 == 'blue':
-            print("You try the door knob and the door creaks open. You peek in and see a garage with a car in the center, with whiffs of gasoline. You push the door open, heading towards the car. Before you realize it, you're surrounded by 5 zombies, closing in. Game Over...")
-
-        else:
-            print("Game Over!")
-
-    else:
-        print("You jump in the water and begin heading towards a boat floating in the middle of the canal. You struggle to get up, but make it on board. Everything is quiet. You see the keys in the ignition. You start up the boat, unsure what to do next you key in on a throttle and some buttons./n")
-        print("Two hands grab you from behind. You spin, a zombie with a sailors hat. Game Over...")
-
-else:
-    print("You begin sprinting down the road. Screaming and chaos surround you. Distracted by the goings-on, you fall into a blasted hole. It's a makeshift trap filled with zombies. Game Over...")
+if len(welcome) > 0:
+    the_beginning()
