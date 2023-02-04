@@ -1,7 +1,7 @@
 def the_beginning():
-    p1 = input("\n\n\nDarkness...")
-    print("\nA distant alarm grows louder. You sit up and rub your eyes...\n\n\n")
-    print('''         _,-.
+    input("\n\n\nDarkness...")
+    input("\nA distant alarm grows louder. You sit up and rub your eyes...")
+    print('''\n\n\n         _,-.
       ,-'  _|
       |_,-O__`-._
       |`-._\`.__ `_.
@@ -11,6 +11,7 @@ def the_beginning():
                     |-._,-'  |
                     | |    _,'
                     '-|_,-'               \n\n''')
+    print("\- \'The TV....It's not an alarm.\' It's the national EAS broadcast. What is going on?")
 
 
 
@@ -56,9 +57,9 @@ print('''
      `:::::::::::::::' .::::::::.  `'
        `::::::::::::' .::::::::::.
          `::::::::'  .:::::::::::::.
-           `::::'   .::::::::::::::'                                 ''')
+           `::::'   .::::::::::::::'                                 \n\n''')
 
 
-welcome = input("Welcome to Zombie Survival. Your mission is to escape the zombie wasteland in one piece.\n\nAre you ready?\n")
+input("Welcome to Zombie Survival. Your mission is to escape the zombie wasteland in one piece.\n\nAre you ready?\n")
 
 the_beginning()
