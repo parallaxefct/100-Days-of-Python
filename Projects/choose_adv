@@ -11,7 +11,11 @@ def the_beginning():
                     |-._,-'  |
                     | |    _,'
                     '-|_,-'               \n\n''')
-    print("It's not an alarm.....the TV?\n\nIt's the national EAS broadcast.\n\nWhat is going on?")
+    print("It's not an alarm.....the TV?\n\nIt's the national EAS broadcast.\n")
+    print("You look out the window, and it's chaos. You see people packing their cars. Others sprinting down the street. Distant sirens whaling and the faint smell of smoke...\n")
+    print("The pre-recorded voice over slinking from the TV snaps you out shock. ")
+
+    left_or_right = input("Unsure, you walk out of your apartment...which way do you go? Left or right?")
 
 
 
@@ -60,6 +64,6 @@ print('''
            `::::'   .::::::::::::::'                                 \n\n''')
 
 
-input("Welcome to Zombie Survival. Your mission is to escape the zombie wasteland in one piece.\n\nAre you ready?\n")
+input("Welcome to Zombie Survival. Your mission is to escape the zombie wasteland in one piece.\n\nAre you ready? ")
 
 the_beginning()
