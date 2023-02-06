@@ -13,12 +13,14 @@ chosen_word = word_list[random.randint(0, 2)]
 #guess = guess.lower()
 
 #TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word.
+
+
 #you can use the list() method to create a list of characters in a single string
+#chosen_word = list(chosen_word)
 
 #however I will use for loop to isolate each character
 chosen_word = str(chosen_word)
+word = []
 
 for letter in chosen_word:
-    chosen_word.append(letter)
-    
-print(chosen_word)
+    word.append(letter)
