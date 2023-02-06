@@ -2,8 +2,12 @@ def left:
     print("You start running.")
     print("\n As you're headed down the hallway you pass an apartment with the door wide open")
     choice = input("Do you go in? ")
-     =
-    if
+    choice = choice.lower()
+
+    if choice == 'yes':
+        insideApartment()
+    else:
+        keepGoing()
 
 
 def right:
