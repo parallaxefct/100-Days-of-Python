@@ -1,5 +1,13 @@
 def insideApartment():
-    input("You slowly push the door open enough to fit through. ")
+    print("\n\n\nYou slowly push the door open enough to fit through. You look around.")
+
+    print("\nTo your left are racks of water, food, and a few first aid kits.")
+
+    print("\nTo your right 4 flash lights, packs of batteries, spindels of rope, and jugs of gasoline.")
+
+    print("\nIn front of you is a desk with a key on top and bat resting on the right side. You're unsure of what it unlocks.")
+
+    input("\n\nYou can only two things. You can grab items you've seen. ")
 
 
 
@@ -10,7 +18,7 @@ def insideApartment():
 def left:
     print("You start running.")
     print("\n As you're headed down the hallway you pass your neighbors apartment, the door slightly ajar. You remember they are prepers. The \"preparing for dooms-day\" type.")
-    choice = input("Do you go in? ")
+    choice = input("\nDo you go in? ")
     choice = choice.lower()
 
     if choice == 'yes':
