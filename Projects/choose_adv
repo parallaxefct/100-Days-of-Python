@@ -29,7 +29,7 @@ def insideApartment():
 
 
 def left():
-    print("You start running.")
+    print("\n\n\nYou start running.")
     print("\nAs you're headed down the hallway you pass your neighbors apartment, the door slightly ajar. You remember they are prepers. The \"preparing for dooms-day\" type.")
     choice = input("\nDo you go in? ")
     choice = choice.lower()
@@ -61,12 +61,12 @@ def the_beginning():
     print("It's not an alarm.....the TV? You know that sound, it's the national EAS broadcast.\n")
 
 
-    input("As you rise from your bed, you hear muffled screams from outside. You run to your window and look out. People running, too many to count. Cars abandoned, building burning. From your apartment door you hear footsteps pouding in the hallway. Tenants shouting names...")
+    input("As you rise from your bed, you hear muffled screams from outside. You run to your window and look out. People running, too many to count. Cars abandoned, buildings burning.")
 
 
-    print("\n\n\n\n\nA pre-recorded voiceover screetching from the TV snaps you out of shock. You don't know what to do, but you know you can't stay here.")
+    print("\n\n\n\n\nPounding footsteps from the hallway snap you out of your state of shock. You don't know what to do, but you know you can't stay here.")
 
-    left_right = input("\nUnsure, you walk out of your apartment...which way do you go? Left or right down the hall way? ")
+    left_right = input("\nUneasy, you brace yourself and swing open the front door...left or right down the hall way? ")
 
     left_right = left_right.lower()
 
