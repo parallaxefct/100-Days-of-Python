@@ -7,7 +7,20 @@ def insideApartment():
 
     print("\nIn front of you is a desk with a key on top and bat resting on the right side. You're unsure of what it unlocks.")
 
-    input("\n\nYou can only two things. You can grab items you've seen. ")
+    item1 = input("\n\nYou think of grabbing whatever you see, however you can only hold 2 items. Should have worn the cargos. Left, Right, or desk?")
+
+    item1 = item1.lower()
+
+    if item1 == 'left':
+        lItem()
+    elif item1 == 'right':
+        rItem()
+    elif item1 == 'desk':
+        desk()
+    else:
+        hallwayCont()
+
+
 
 
 
@@ -17,7 +30,7 @@ def insideApartment():
 
 def left():
     print("You start running.")
-    print("\n As you're headed down the hallway you pass your neighbors apartment, the door slightly ajar. You remember they are prepers. The \"preparing for dooms-day\" type.")
+    print("\nAs you're headed down the hallway you pass your neighbors apartment, the door slightly ajar. You remember they are prepers. The \"preparing for dooms-day\" type.")
     choice = input("\nDo you go in? ")
     choice = choice.lower()
 
@@ -27,16 +40,15 @@ def left():
         keepGoing()
 
 
-def right:
+#def right():
 
 
-#
 def the_beginning():
     input("\n\n\nDarkness...")
     input("\nA distant alarm grows louder. You sit up and rub your eyes...")
 
 
-    print('''\n\n\n         _,-.
+    print('''\n\n\n\n\n\n\n         _,-.
       ,-'  _|
       |_,-O__`-._
       |`-._\`.__ `_.
@@ -49,12 +61,12 @@ def the_beginning():
     print("It's not an alarm.....the TV? You know that sound, it's the national EAS broadcast.\n")
 
 
-    input("You look out of the window, and it's chaos. You see people throwing suitcases and family members in cars. Others sprinting down the street. Too many to count. Distant sirens wailing and the faint smell of smoke creeps in...")
+    input("As you rise from your bed, you hear muffled screams from outside. You run to your window and look out. People running, too many to count. Cars abandoned, building burning. From your apartment door you hear footsteps pouding in the hallway. Tenants shouting names...")
 
 
-    print("\n\n\nA pre-recorded voiceover screetching from the TV snaps you out of shock. You don't know what to do, but you know you can't stay here.\n")
+    print("\n\n\n\n\nA pre-recorded voiceover screetching from the TV snaps you out of shock. You don't know what to do, but you know you can't stay here.")
 
-    left_right = input("Unsure, you walk out of your apartment...which way do you go? Left or right down the hall way? ")
+    left_right = input("\nUnsure, you walk out of your apartment...which way do you go? Left or right down the hall way? ")
 
     left_right = left_right.lower()
 
@@ -68,6 +80,7 @@ def the_beginning():
 
 
 #the window
+print("\n\nWelcome to Zombie Survival. Your mission is to escape the zombie wasteland in one piece.")
 print('''
 
                                     _______________________      |
@@ -108,6 +121,6 @@ print('''
            `::::'   .::::::::::::::'                                 \n\n''')
 
 
-input("Welcome to Zombie Survival. Your mission is to escape the zombie wasteland in one piece.\n\nAre you ready? ")
+input("\nAre you ready? ")
 
 the_beginning()
