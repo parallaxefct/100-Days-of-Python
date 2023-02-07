@@ -7,6 +7,9 @@ word_list = ["aardvark", "baboon", "camel"]
 
 chosen_word = word_list[random.randint(0, 2)]
 
+#OR
+#chosen_word = random.choice(word_list)
+
 #TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
 
 guess = input("Guess a letter! ")
@@ -14,13 +17,22 @@ guess = guess.lower()
 
 #TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word.
 
-
-#you can use the list() method to create a list of characters in a single string
-#chosen_word = list(chosen_word)
-
-#FOR LOOP to capture each character
 chosen_word = str(chosen_word)
 word = []
 
 for letter in chosen_word:
     word.append(letter)
+
+
+#you can use the list() method to create a list of characters in a single string
+#chosen_word = list(chosen_word)
+counter = 0
+
+for x in word:
+    if guess == word[counter]:
+        print('Right')
+
+    elif guess != word[counter]:
+        print('Wrong')
+
+    counter += 1
