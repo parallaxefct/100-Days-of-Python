@@ -11,8 +11,8 @@ chosen_word = word_list[random.randint(0, 2)] # OR chosen_word = random.choice(w
 #So if the chosen_word was "apple", display should be ["_", "_", "_", "_", "_"] with 5 "_" representing each letter to guess.
 guess = input("Guess a letter: ").lower()
 
-display = []
 
+display = []
 for letter in chosen_word:
     display.append('_')
 
@@ -27,7 +27,9 @@ counter = 0
 for letter in chosen_word:
     if letter == guess:
         display[counter] = guess
-        
+    else:
+        print('Wrong')
+
     counter += 1
 
 
