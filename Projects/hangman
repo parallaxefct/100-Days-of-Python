@@ -25,7 +25,7 @@ for letter in chosen_word:
 #e.g. If the user guessed "p" and the chosen word was "apple", then display should be ["_", "p", "p", "_", "_"].
 counter = 0
 for index in chosen_word:
-    if letter == guess:
+    if index == guess:
         display[counter] = guess
     else:
         print('Wrong')
