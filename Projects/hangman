@@ -27,8 +27,6 @@ counter = 0
 for index in chosen_word:
     if index == guess:
         display[counter] = guess
-    else:
-        print('Wrong')
 
     counter += 1
 
