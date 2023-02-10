@@ -18,12 +18,11 @@ for letter in chosen_word:
 
 
 
-while '_' in display:
-    for index in chosen_word:
-        if index == guess:
-            display[counter] = guess
+for index in chosen_word:
+    if index == guess:
+        display[counter] = guess
 
-            counter += 1
+        counter += 1
 
 
 
