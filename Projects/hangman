@@ -16,7 +16,9 @@ guess = guess.lower()
 
 for index in chosen_word:
     if guess == index:
-        print('Correct')
+        print('Right')
 
     else:
         print('Wrong')
+
+print(chosen_word)
