@@ -16,17 +16,11 @@ for letter in chosen_word:
     display.append('_')
 
 
-
-
 for index in chosen_word:
     if index == guess:
         display[counter] = guess
 
         counter += 1
-
-
-
-
 
 
 print(chosen_word)
