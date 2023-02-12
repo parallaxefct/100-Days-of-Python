@@ -83,8 +83,9 @@ while '_' in display:
         if guess == letter:
             display[place] = guess
 
-    if :
+    if guess not in chosen_word:
         lives -= 1
+        print(stage[lives])
 
     #TODO-2: - If guess is not a letter in the chosen_word,
     #Then reduce 'lives' by 1.
