@@ -304,10 +304,9 @@ for index in chosen_word:
 
 while '_' in display:
     guess = input("Guess a letter: ").lower()
-    #TODO-4: - If the user has entered a letter they've already guessed, print the letter and let them know.
-    previous_guesses = []
-    previous_guesses.append(guess)
-
+    
+    if guess in display:
+        print(f"You\'ve already guessed {guess}")
 
     for place in range(word_length):
         letter = chosen_word[place]
