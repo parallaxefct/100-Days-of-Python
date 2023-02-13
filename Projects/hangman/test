@@ -1,3 +1,0 @@
-import hangman_words
-
-print(word_list)
