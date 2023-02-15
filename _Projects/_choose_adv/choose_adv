@@ -45,4 +45,4 @@ print('''
 answer = input("\nAre you ready? ")
 os.system('clear')
 
-choice1.left_right()
+choice1_left_right.left_right()
