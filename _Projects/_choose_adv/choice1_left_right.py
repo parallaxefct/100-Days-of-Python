@@ -28,7 +28,7 @@ def left_right():
     choice1 = left_right.lower()
 
     if choice1 == 'left':
-        choice.left()
+        choice1_left_apartment.left()
         os.system('clear')
 
     else:
