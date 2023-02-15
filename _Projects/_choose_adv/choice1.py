@@ -1,4 +1,5 @@
 import choice2
+import os
 
 def left_right():
     items = []
@@ -28,5 +29,7 @@ def left_right():
 
     if choice1 == 'left':
         choice.left()
+        os.system('clear')
+
     else:
         choice.right()
