@@ -1,5 +1,5 @@
-import choice2
 import os
+import choice2
 
 def left_right():
     items = []
