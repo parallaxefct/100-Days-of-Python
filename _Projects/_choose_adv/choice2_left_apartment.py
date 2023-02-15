@@ -8,7 +8,7 @@ def left():
     choice = choice.lower()
 
     if choice == 'yes':
-        found_items.insideApartment()
+        choice3_found_items.insideApartment()
 
-    #else:
-        #keepGoing()
+    else:
+        choice3_keep_going.keepGoing()
