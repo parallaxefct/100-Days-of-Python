@@ -5,6 +5,6 @@ def left():
     choice = choice.lower()
 
     if choice == 'yes':
-        insideApartment()
+        found_items.insideApartment()
     #else:
         #keepGoing()
