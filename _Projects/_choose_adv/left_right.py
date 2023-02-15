@@ -1,4 +1,4 @@
-def the_beginning():
+def left_right():
     items = []
     input("\n\n\nDarkness...")
     input("\nA distant alarm grows louder. You sit up and rub your eyes...\n\n\n\n\n")

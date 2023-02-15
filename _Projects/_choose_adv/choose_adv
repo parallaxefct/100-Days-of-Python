@@ -43,4 +43,4 @@ print('''
 
 input("\nAre you ready? ")
 
-the_beginning()
+left_right()
