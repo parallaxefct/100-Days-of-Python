@@ -1,4 +1,5 @@
-import the_beginning
+import os
+import choice1
 
 print("\n\nWelcome to Zombie Survival. Your mission is to escape the zombie wasteland in one piece.")
 print('''
@@ -41,6 +42,7 @@ print('''
            `::::'   .::::::::::::::'                                 \n\n''')
 
 
-input("\nAre you ready? ")
+answer = input("\nAre you ready? ")
+os.system('clear')
 
-left_right()
+choice1.left_right()
