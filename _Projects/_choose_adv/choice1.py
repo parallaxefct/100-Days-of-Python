@@ -6,7 +6,7 @@ def left_right():
 
     print('''     _______________
     |,----------.  |\
-    \n|||=| |
+    \n    ||           |=| |
     ||          || | |
     ||       . _o| | | __
     |`-----------' |/ /~/
@@ -22,9 +22,9 @@ def left_right():
 
     left_right = input("\nUneasy, you brace yourself and swing open the front door...left or right down the hall way? ")
 
-    left_right = left_right.lower()
+    choice1 = left_right.lower()
 
-    if left_right == 'left':
+    if choice1 == 'left':
         left()
     else:
         right()
