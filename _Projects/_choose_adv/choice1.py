@@ -1,17 +1,17 @@
 def left_right():
     items = []
     input("Darkness...")
-    input("\nA distant alarm grows louder. You sit up and rub your eyes...\n\n\n\n\n")
+    input("\nA distant alarm grows louder. You sit up and rub your eyes...\n\n\n\n")
 
 
     print('''     _______________
     |,----------.  |\
-    ||           |=| |
+    \n|||=| |
     ||          || | |
     ||       . _o| | | __
     |`-----------' |/ /~/
      ~~~~~~~~~~~~~~~ / /
-                     ~~\n\n''')
+                     ~~\n\n\n''')
     print("It's not an alarm.....the TV? You know that image. It's the national EAS broadcast ")
 
 
