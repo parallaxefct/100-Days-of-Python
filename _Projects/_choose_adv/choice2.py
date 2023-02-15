@@ -8,7 +8,3 @@ def left():
         insideApartment()
     #else:
         #keepGoing()
-
-
-
-def right():

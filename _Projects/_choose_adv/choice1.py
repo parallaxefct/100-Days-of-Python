@@ -1,3 +1,5 @@
+import choice2
+
 def left_right():
     items = []
     input("Darkness...")
@@ -25,6 +27,6 @@ def left_right():
     choice1 = left_right.lower()
 
     if choice1 == 'left':
-        left()
+        choice.left()
     else:
-        right()
+        choice.right()
