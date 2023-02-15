@@ -1,6 +1,5 @@
-#def keepGoing():
+import the_beginning
 
-#the window
 print("\n\nWelcome to Zombie Survival. Your mission is to escape the zombie wasteland in one piece.")
 print('''
 
