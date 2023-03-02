@@ -3,11 +3,11 @@ def prime_checker(number):
     #this filters 1 and below
     if number > 1:
         if number % 2 == 0:
-            print('It\'s not a prime number')
+            print('It\'s not a prime number.')
         elif number % 3 == 0:
-            print('It\'s not a prime number')
+            print('It\'s not a prime number.')
         else:
-            print('It\'s a prime number')
+            print('It\'s a prime number.')
 
 
 n = int(input("Check this number: "))
