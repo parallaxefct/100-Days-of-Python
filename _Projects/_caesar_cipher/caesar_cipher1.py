@@ -12,15 +12,14 @@ def encrypt(text, shift):
     source = []
     encrypted  = []
 
-    #creating a list 
+    #creates a list for the text input
     for i in text:
         source.append(i)
 
+    for x in range(0, len(alphabet[])):
+        print(x)
 
-    for j in text:
-
-
-
+    print(source)
 
 
     #TODO-2: Inside the 'encrypt' function, shift each letter of the 'text' forwards in the alphabet by the shift amount and print the encrypted text.
