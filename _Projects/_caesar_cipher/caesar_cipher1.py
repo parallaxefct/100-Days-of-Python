@@ -12,7 +12,7 @@ def encrypt(t, s):
     #TODO-2: Inside the 'encrypt' function, shift each letter of the 'text' forwards in the alphabet by the shift amount and print the encrypted text.
     #e.g.
     source_text = []
-    encrypted_text  = []
+    encrypted_text  = ''
     length_text = len(alphabet)
 
     #creates a list for the word given
@@ -26,7 +26,7 @@ def encrypt(t, s):
             #this checks X against the index of alphabet and appends the encrypted letter based on SHIFT given
             if x == alphabet[y]:
                 y = y + s
-                encrypted_text.append(alphabet[y])
+                encrypted_text += alphabet[y]
 
     #this joins the list to a STRING and outputs the sentence requested
     encrypted_text = ''.join(encrypted_text)

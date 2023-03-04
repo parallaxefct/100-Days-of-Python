@@ -9,25 +9,27 @@ text = input("Type your message:\n").lower()
 shift = int(input("Type the shift number:\n"))
 
 #TODO-1: Create a function called 'encrypt' that takes the 'text' and 'shift' as inputs.
-def encrypt(t, s):
+def encrypt(given_text, shift_amount):
     #TODO-2: Inside the 'encrypt' function, shift each letter of the 'text' forwards in the alphabet by the shift amount and print the encrypted text.
     #e.g.
-    source_text = []
-    encrypted_text  = []
-    length_text = len(alphabet)
+
+    #source_text = []
+    #encrypted_text  = []
+    #length_text = len(alphabet)
 
     #creates a list for the word given
-    for i in t:
-        source_text.append(i)
+    #for i in t:
+        #source_text.append(i)
 
     #this assigns the first letter of the word given, to x
-    for x in source_text:
-        #this steps through each letter of the alphabet
-        for y in range(0, length_text):
-            #this checks X against the index of alphabet and appends the encrypted letter based on SHIFT given
-            if x == alphabet[y]:
-                y = y + s
-                encrypted_text.append(alphabet[y])
+    for x in given_text:
+        cipher_text = ''
+
+        position = alphabet.index(x)
+        new_position = position + shift_amount
+        new_letter = alphabet[new_position]
+
+        cipher += new_letter
 
     #this joins the list to a STRING and outputs the sentence requested
     encrypted_text = ''.join(encrypted_text)
