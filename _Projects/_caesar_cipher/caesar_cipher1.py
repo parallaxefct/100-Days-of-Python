@@ -17,13 +17,14 @@ def encrypt(t, s):
     for i in t:
         source_text.append(i)
 
-
+    #this assigns the first letter of the word given, to x
     for x in source_text:
-
+        #this steps through each letter of the alphabet
         for y in range(0, length_text):
-
+            #this checks X against the index of alphabet and appends the encrypted letter based on SHIFT given
             if x == alphabet[y]:
-                append.encrypted_text(alphabet[y + s])
+                y = y + s
+                encrypted_text.append(alphabet[y])
 
 
     print(source_text)
