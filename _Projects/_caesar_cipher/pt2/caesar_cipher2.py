@@ -14,11 +14,11 @@ def encrypt(t, s):
     length_text = len(alphabet)
 
     #this assigns the first letter of the word given, to X
-    for x in t:
+    for letter in t:
         #this steps through each letter of the alphabet
         for y in range(0, length_text):
             #this checks X against the index of alphabet and adds the encrypted letters based on SHIFT given
-            if x == alphabet[y]:
+            if letter == alphabet[y]:
                 y = y + s
                 encrypted_text += alphabet[y]
 
@@ -29,9 +29,14 @@ def encrypt(t, s):
 #TODO-1: Create a different function called 'decrypt' that takes the 'text' and 'shift' as inputs.
 def decrypt(t, s):
     #establishes variable
-
+    decrypted_text = ''
+    length_text = len(alphabet)
   #TODO-2: Inside the 'decrypt' function, shift each letter of the 'text' *backwards* in the alphabet by the shift amount and print the decrypted text.
   #e.g.
+    for letter in t:
+        for y in range(0, length_text):
+            
+
   #cipher_text = "mjqqt"
   #shift = 5
   #plain_text = "hello"
