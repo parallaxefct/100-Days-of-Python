@@ -21,14 +21,19 @@ def encrypt(given_text, shift_amount):
     #for i in t:
         #source_text.append(i)
 
-    #this assigns the first letter of the word given, to x
+    #this assigns the each letter to X varibale
     for x in given_text:
+        #establishes variable
         cipher_text = ''
 
+        #finds the position of given_text letters
         position = alphabet.index(x)
+        #adds shift amount to position
         new_position = position + shift_amount
+        #pulls the letter of new_position
         new_letter = alphabet[new_position]
 
+        #adds letter to STRING variable
         cipher += new_letter
 
     #this joins the list to a STRING and outputs the sentence requested
@@ -39,6 +44,6 @@ def encrypt(given_text, shift_amount):
 
 #TODO-3: Call the encrypt function and pass in the user inputs. You should be able to test the code and encrypt a message.
 if direction == 'encode':
-    encrypt(text, shift)
+    encrypt(given_text=text, shift_amount=shift)
 
 #else:
