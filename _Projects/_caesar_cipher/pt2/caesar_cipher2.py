@@ -40,7 +40,7 @@ def decrypt(t, s):
         for y in range(0, length_text):
             #this checks X against the index of alphabet and adds the encrypted letters based on SHIFT given
             if letter == alphabet[y]:
-                y = y + s
+                y = y - s
                 encrypted_text += alphabet[y]
 
 
@@ -56,4 +56,5 @@ def decrypt(t, s):
 if direction == 'encode':
     encrypt(text, shift)
 
-#else:
+else:
+    decrypt(text, shift)
