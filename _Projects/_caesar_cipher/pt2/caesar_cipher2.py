@@ -13,7 +13,7 @@ def encrypt(t, s):
     encrypted_text  = ''
     length_text = len(alphabet)
 
-    #this assigns the first letter of the word given, to X
+    #this assigns the first letter of the word given, to LETTER
     for letter in t:
         #this steps through each letter of the alphabet
         for y in range(0, length_text):
@@ -33,9 +33,11 @@ def decrypt(t, s):
     length_text = len(alphabet)
   #TODO-2: Inside the 'decrypt' function, shift each letter of the 'text' *backwards* in the alphabet by the shift amount and print the decrypted text.
   #e.g.
+
+    #this assigns the first letter of the word given, to LEETTER
     for letter in t:
         for y in range(0, length_text):
-            
+
 
   #cipher_text = "mjqqt"
   #shift = 5
