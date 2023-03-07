@@ -9,10 +9,10 @@ text = input("Type your message:\n").lower()
 shift = int(input("Type the shift number:\n"))
 
 def encrypt(given_text, shift_amount):
-    #establishes variable
-    cipher_text = ''
     #this assigns the each letter to X varibale
     for x in given_text:
+        #establishes variable
+        cipher_text = ''
         #finds the position of given_text letters
         position = alphabet.index(x)
         #adds shift amount to position
@@ -27,10 +27,10 @@ def encrypt(given_text, shift_amount):
 
 #TODO-1: Create a different function called 'decrypt' that takes the 'text' and 'shift' as inputs.
 def decrypt(given_text, shift_amount):
-  #establishes variable
-    cipher_text = ''
     #this assigns the each letter to X varibale
     for x in given_text:
+        #establishes variable
+        cipher_text = ''
         #finds the position of given_text letters
         position = alphabet.index(x)
         #adds shift amount to position
