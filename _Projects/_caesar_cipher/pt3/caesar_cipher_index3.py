@@ -13,43 +13,36 @@ shift = int(input("Type the shift number:\n"))
 #combined both functions into one function called caesar()
 
 def caesar(given_text, shift_amount, direction_choice):
-
-
-
-def encrypt(given_text, shift_amount):
     #establishes variable
-    cipher_text = ''
-    #this assigns the each letter to X varibale
-    for x in given_text:
-        #finds the position of given_text letters
-        position = alphabet.index(x)
-        #adds shift amount to position
-        new_position = position + shift_amount
-        #pulls the letter of new_position
-        new_letter = alphabet[new_position]
+    converted_text = ''
 
-        #adds letter to STRING variable
-        cipher_text += new_letter
+    if direction_choice == 'encode':
+        for x in given_text:
+            #finds the position of given_text letters
+            position = alphabet.index(x)
+            #adds shift amount to position
+            new_position = position + shift_amount
+            #pulls the letter of new_position
+            new_letter = alphabet[new_position]
+            #adds letter to STRING variable
+            converted_text += new_letter
+        print(f'\nThe encoded text is {converted_text}\n')
 
-    print(f'\nThe encoded text is {cipher_text}\n')
+    elif direction_choice == 'decode':
+        #this assigns the each letter to X varibale
+        for x in given_text:
+            #finds the position of given_text letters
+            position = alphabet.index(x)
+            #adds shift amount to position
+            new_position = position - shift_amount
+            #pulls the letter of new_position
+            new_letter = alphabet[new_position]
+            #adds letter to STRING variable
+            converted_text += new_letter
+        print(f'\nThe encoded text is {converted_text}\n')
 
-def decrypt(cipher_text, shift_amount):
-    #establishes variable
-    decrypted_text = ''
-    #this assigns the each letter to X varibale
-    for x in cipher_text:
-        #finds the position of given_text letters
-        position = alphabet.index(x)
-        #adds shift amount to position
-        new_position = position - shift_amount
-        #pulls the letter of new_position
-        new_letter = alphabet[new_position]
-
-        #adds letter to STRING variable
-        cipher_text += new_letter
-
-    print(f'\nThe encoded text is {decrypted_text}\n')
+    else:
+        print('incorrect input')
 
 
-
-caesar(given_text=text, shift_amount=shift, direction=direction_choice)
+caesar(given_text=text, shift_amount=shift, direction_choice=direction)
