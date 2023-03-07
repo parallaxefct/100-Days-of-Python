@@ -15,10 +15,10 @@ shift = int(input("Type the shift number:\n"))
 def caesar(given_text, shift_amount, direction_choice):
     #establishes variable
     converted_text = ''
+    if direction_choice == 'decode':
+        shift_amount *= -1
     for x in given_text:
         position = alphabet.index(x)
-        if direction_choice == 'decode':
-            shift_amount *= -1
         new_position = position + shift_amount
         new_letter = alphabet[new_position]
         converted_text += new_letter
