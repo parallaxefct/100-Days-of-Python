@@ -15,34 +15,14 @@ shift = int(input("Type the shift number:\n"))
 def caesar(given_text, shift_amount, direction_choice):
     #establishes variable
     converted_text = ''
+    for x in given_text:
+        position = alphabet.index(x)
+        if direction_choice == 'decode':
+            shift_amount *= -1
+        new_position = position + shift_amount
+        new_letter = alphabet[new_position]
+        converted_text += new_letter
 
-    if direction_choice == 'encode':
-        for x in given_text:
-            #finds the position of given_text letters
-            position = alphabet.index(x)
-            #adds shift amount to position
-            new_position = position + shift_amount
-            #pulls the letter of new_position
-            new_letter = alphabet[new_position]
-            #adds letter to STRING variable
-            converted_text += new_letter
-        print(f'\nThe encoded text is {converted_text}\n')
-
-    elif direction_choice == 'decode':
-        #this assigns the each letter to X varibale
-        for x in given_text:
-            #finds the position of given_text letters
-            position = alphabet.index(x)
-            #adds shift amount to position
-            new_position = position - shift_amount
-            #pulls the letter of new_position
-            new_letter = alphabet[new_position]
-            #adds letter to STRING variable
-            converted_text += new_letter
-        print(f'\nThe encoded text is {converted_text}\n')
-
-    else:
-        print('incorrect input')
-
+    print(f'The {direction_choice}d test is {converted_text}')
 
 caesar(given_text=text, shift_amount=shift, direction_choice=direction)
