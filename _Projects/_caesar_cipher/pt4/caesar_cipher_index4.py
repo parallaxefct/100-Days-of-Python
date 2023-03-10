@@ -27,12 +27,13 @@ print(cipher_art.logo)
 #e.g. Type 'yes' if you want to go again. Otherwise type 'no'.
 #If they type 'yes' then ask them for the direction/text/shift again and call the caesar() function again?
 #Hint: Try creating a while loop that continues to execute the program if the user types 'yes'.
-direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
-text = input("Type your message:\n").lower()
-shift = int(input("Type the shift number:\n"))
+def cipher_start():
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+    text = input("Type your message:\n").lower()
+    shift = int(input("Type the shift number:\n"))
 
-#this if statement ensures that regardless of the SHIFT amount that is input, the program will stay within the 26 characters in the alphabet
-if shift > len(alphabet):
-    shift = shift % 26
+    #this if statement ensures that regardless of the SHIFT amount that is input, the program will stay within the 26 characters in the alphabet
+    if shift > len(alphabet):
+        shift = shift % 26
 
-caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
+    caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
