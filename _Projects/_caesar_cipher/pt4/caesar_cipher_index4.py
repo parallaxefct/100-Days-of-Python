@@ -1,4 +1,4 @@
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 def caesar(start_text, shift_amount, cipher_direction):
   end_text = ""
@@ -11,22 +11,16 @@ def caesar(start_text, shift_amount, cipher_direction):
         position = alphabet.index(char)
         new_position = position + shift_amount
         end_text += alphabet[new_position]
+    else:
+        end_text += char
 
   print(f"Here's the {cipher_direction}d result: {end_text}")
+  restart = input('\nDo you want to restart the cipher program?: ')
 
-#Imports and prints the logo from art.py when the program starts.
-import cipher_art
-print(cipher_art.logo)
+  if restart == 'yes':
+      cipher_start()
 
-#OR
 
-#from cipher_art import logo
-#print(logo)
-
-#TODO-4: Can you figure out a way to ask the user if they want to restart the cipher program?
-#e.g. Type 'yes' if you want to go again. Otherwise type 'no'.
-#If they type 'yes' then ask them for the direction/text/shift again and call the caesar() function again?
-#Hint: Try creating a while loop that continues to execute the program if the user types 'yes'.
 def cipher_start():
     direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
     text = input("Type your message:\n").lower()
@@ -37,3 +31,13 @@ def cipher_start():
         shift = shift % 26
 
     caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
+
+#Imports and prints the logo from art.py when the program starts.
+import cipher_art
+print(cipher_art.logo)
+cipher_start()
+
+#OR
+
+#from cipher_art import logo
+#print(logo)
